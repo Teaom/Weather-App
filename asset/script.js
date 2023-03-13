@@ -206,7 +206,7 @@ const fiveDay = [{
 }
 
 
-//C 273 less than kelvin 
+ 
 function convertToFah(cityTemp) {
     var celsius = cityTemp - 273; 
     var fahrenheit = celsius * 9/5 +32; 
