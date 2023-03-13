@@ -1,0 +1,11 @@
+.card.border {
+    border-radius: 8px;
+}
+
+.card-body {
+    border-radius: 10px;
+}
+
+.citySubmit {
+    border-radius: 100px;
+}   
