@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./Weather-App/asset/style.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <title>5-Day Weather</title>
+</head>
+<body>
+        <header id="topHeader" class="topHeader text-white text-center" style='background-image: linear-gradient(to right, rgb(63, 84, 189) 10%, rgb(32, 36, 255) 100%)' >
+        <h1>5-Day Weather</h1>
+        </header>
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-4 col-xl-3">
+                <h2 class="display-6"></h2>Search a city:</h2>
+                <div class="form-group">
+                    <label for=""></label>
+                    <input id = 'city' type="text" class="form-control form-control-sm darkBorder" name="" 
+                        aria-describedby="helpId" placeholder="Search a city">
+                    <button id = "citySubmit" class="my-3 btn btn-primary col-12">Search</button>
+                    <div class="divider py-1 bg-dark mt-1.5 mb-1.5"></div>
+                    <div class="list-group mt-2 mb-2">
+                        <button id = 'city1' type="select" class="my-2 btn btn-primary col-12"
+                            style='background-image:radial-gradient(lightblue, gray); border-color: gray;'>City Name</button>
+                        <button id = 'city2' type="select" class="my-2 btn btn-primary col-12"
+                            style='background-image:radial-gradient(lightblue, gray); border-color: gray;'>City Name</button>
+                        <button id = 'city3' type="select" class="my-2 btn btn-primary col-12"
+                            style='background-image:radial-gradient(lightblue, gray); border-color: gray;'>City Name</button>
+                        <button id = 'city4' type="select" class="my-2 btn btn-primary col-12"
+                            style='background-image:radial-gradient(lightblue, gray); border-color: gray;'>City Name</button>
+                        <button id = 'city5' type="select" class="my-2 btn btn-primary col-12"
+                            style='background-image:radial-gradient(lightblue, gray); border-color: gray;'>City Name</button>
+
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-8 col-xl-9">
+                <div class="darkBorder card border">
+                    <div class="card-body" style ='background-image: linear-gradient(to right, rgb(0, 213, 255) 25%, rgb(15, 2, 253) 50%, rgb(0, 213, 255) 100%)'>
+                        <h4 id = 'currentCity' class="card-title"><span id ='cityName'></span><div id = 'citySym'></div><span id = 'today'></span></span></h4>
+                        <ul id = 'currentCitySpecs' class="list">
+                            <li class="list-item">Temp: <span id ='cityTemp'></span>° F </li>
+                            <li class="list-item">Wind: <span id ='cityWind'></span> MPH</li>
+                            <li class="list-item">Humidity: <span id ='cityHum'></span>%</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+                <h4 class='mt-2 mb-2'>5-Day Forecast:</h4>
+                <section class="container-fluid">
+                    <div class="row row-cols-5">
+
+                        <div class='card border' style='background-image: linear-gradient(lightblue, gray); border-color: gray;'>
+                            <h3 style = 'color: rgb(67, 75, 83)'id = 'day1' class="col">Date Placeholder</h3>
+                            <h4 style = 'color: aliceblue'id = 'day0-container' class ='ml-2'></h4>
+                        </div>
+                        <div class='card border' style='background-image: linear-gradient(lightblue, gray); border-color: gray;'>
+                            <h3 style = 'color: rgb(67, 75, 83)'id = 'day2' class="col">Date Placeholder</h3>
+                            <h4 style = 'color: aliceblue'id = 'day1-container' class ='ml-2'></h4>
+                        </div>
+                        <div class='card border' style='background-image: linear-gradient(lightblue, gray); border-color: gray;'>
+                            <h3 style = 'color:rgb(67, 75, 83)'id = 'day3' class="col">Date Placeholder</h3>
+                            <h4 style = 'color: aliceblue'id = 'day2-container' class ='ml-2'></h4>
+                        </div>
+                        <div class='card border' style='background-image: linear-gradient(lightblue, gray); border-color: gray;'>
+                            <h3 style = 'color:rgb(67, 75, 83)'id = 'day4' class="col">Date Placeholder</h3>
+                            <h4 style = 'color: aliceblue'id = 'day3-container' class ='ml-2'></h4>
+                        </div>
+                        <div class='card border' style='background-image: linear-gradient(lightblue, gray); border-color: gray;'>
+                            <h3 style = 'color: rgb(67, 75, 83)'id = 'day5' class="col">Date Placeholder</h3>
+                            <h4 style = 'color: aliceblue'id = 'day4-container' class ='ml-2'></h4>
+                        </div>
+
+                        
+
+
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+ 
+
+    <script src="./Weather-App/asset/script.js"></script>
+</body>
+</html> 
